@@ -472,7 +472,7 @@
                     });
 
                     setting.onDrag.call(ele, evt);
-                };
+                }
 
                 function mouseUp(evt) {
                     evt = evt.originalEvent;
