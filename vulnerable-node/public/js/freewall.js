@@ -459,7 +459,7 @@
                     }
 
                     return false;
-                };
+                }
 
 
                 function mouseMove(evt) {
