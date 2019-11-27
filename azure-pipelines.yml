@@ -14,13 +14,13 @@ pool:
 
 
 steps:
-#- task: SonarCloudPrepare@1
- # inputs:
- #   SonarCloud: 'testpipe'
- #   organization: 'tonytest'
- #   scannerMode: 'CLI'
- #   configMode: 'file'
-- task: SonarCloudAnalyze@1
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'testpipe'
+    organization: 'tonytest'
+    scannerMode: 'CLI'
+    configMode: 'file'
+#- task: SonarCloudAnalyze@1
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
